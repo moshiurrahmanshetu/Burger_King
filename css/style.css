@@ -472,81 +472,90 @@ a:focus {
 /*******************************/
 /********* Booking CSS *********/
 /*******************************/
-.booking {
-    position: relative;
+ .menubar-with-price {
+    padding: 40px 200px;
+    background: #242424;
+}
+.menubar-with-price .section-header p {
+    color: #ff8c21;
+}
+.label-box {
     width: 100%;
-    margin-bottom: 45px;
-    background: rgba(0, 0, 0, .04);
+    padding: 14px 18px;
+    border-radius: 4px;
+    color: #fff;
+    margin: 15px;
 }
-
-.booking .booking-content {
-    padding: 45px 0 15px 0;
+.label-box .title {
+    font-size: 20px;
+    background: linear-gradient(to right, #040e1a, #ff8c21);
+    font-weight: 700;
+    padding: 5px;
+    text-align: center;
 }
-
-.booking .booking-content .section-header {
-    margin-bottom: 30px;
+.label-box .price {
+    background: linear-gradient(to left, #040e1a, #ff8c21);
+    font-size: 28px;
+    padding: 5px;
+    text-align: center;
+    font-weight: 800;
 }
-
-.booking .booking-form {
-    padding: 60px 30px;
-    background: #fbaf32;
-}
-
-.booking .booking-form .control-group {
-    margin-bottom: 15px;
-}
-
-.booking .booking-form .input-group-text {
-    position: absolute;
-    padding: 0;
-    border: none;
-    background: none;
-    top: 15px;
-    right: 15px;
-    color: #ffffff;
+.label-box .price span {
     font-size: 14px;
+    font-weight: 600;
+    margin-left: 6px;
+    color: #ffcc91;
 }
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    .menubar-with-price {
+        padding: 30px 100px;
+    }
 
-.booking .booking-form .form-control {
-    height: 45px;
-    font-size: 14px;
-    color: #ffffff;
-    padding: 0 15px;
-    border-radius: 5px !important;
-    border: 1px solid #ffffff;
-    background: transparent;
 }
-
-.booking .booking-form select.form-control {
-    padding: 0 10px;
+@media screen and (min-width: 768px) and (max-width: 991px) {
+    .menubar-with-price {
+        padding: 30px 70px;
+    }
+    .label-box {
+        margin: 15px 0;
+        padding: 12px 5px;
+    }
 }
-
-.booking .booking-form .form-control::placeholder {
-    color: #ffffff;
-    opacity: 1;
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    .menubar-with-price {
+        padding: 30px 20px;
+    }
+    .label-box {
+        margin: 5px 0;
+        padding: 10px 0;
+    }
 }
-
-.booking .booking-form .form-control:-ms-input-placeholder,
-.booking .booking-form .form-control::-ms-input-placeholder {
-    color: #ffffff;
+@media screen and (min-width: 450px) and (max-width: 575px) {
+    .menubar-with-price {
+        padding: 30px 60px;
+    }
 }
-
-.booking .booking-form .input-group [data-toggle="datetimepicker"] {
-    cursor: default;
+@media screen and (min-width: 320px) and (max-width: 375px) {
+    .menubar-with-price {
+        padding: 30px 10px;
+    }
 }
-
-.booking .booking-form .btn.custom-btn {
-    width: 100%;
-    color: #fbaf32;
-    background: #ffffff;
-    border: 1px solid #ffffff;
+@media (max-width: 768px) {
+    .label-box .title {
+        font-size: 18px;
+    }
+    .label-box .price {
+        font-size: 24px;
+    }
 }
-
-.booking .booking-form .btn.custom-btn:hover {
-    color: #ffffff;
-    background: transparent;
+@media (max-width: 480px) {
+    .label-box .title {
+        font-size: 16px;
+    }
+    .label-box .price {
+        font-size: 22px;
+    }
 }
-
 
 /*******************************/
 /********** Menu CSS ***********/
@@ -660,6 +669,7 @@ a:focus {
     position: relative;
     width: 100%;
     border-radius: 15px;
+    border: 2px solid #f19e02;
 }
 
 .about .btn-play {
@@ -786,6 +796,77 @@ a:focus {
     }
 }
 
+ /*Mishhion Vision Section */
+        .sf-mission-vision {
+            background: #fff5e8;
+            font-family: "Poppins", sans-serif;
+        }
+
+        /* Titles */
+        .sf-mission-vision .mv-title {
+            font-size: 36px;
+            font-weight: 800;
+            color: #b36a21;
+        }
+
+        .sf-mission-vision .mv-subtitle {
+            color: #555;
+            font-size: 16px;
+        }
+
+        /* Cards */
+        .sf-mission-vision .mv-card {
+            background: #ffffff;
+            padding: 35px;
+            border-radius: 20px;
+            position: relative;
+            border: 2px solid transparent;
+            background-clip: padding-box;
+            box-shadow: 0 4px 18px rgba(0, 0, 0, 0.12);
+            transition: 0.3s ease-in-out;
+        }
+
+        /* Gradient border using mask */
+        .sf-mission-vision .mv-card:before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            border-radius: 20px;
+            padding: 2px;
+            background: linear-gradient(135deg, #1d8f42, #b36a21, #f7b55e);
+            -webkit-mask:
+                linear-gradient(#fff 0 0) content-box,
+                linear-gradient(#fff 0 0);
+            -webkit-mask-composite: xor;
+            mask-composite: exclude;
+        }
+
+        /* Hover effect */
+        .sf-mission-vision .mv-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.18);
+        }
+
+        /* Icon */
+        .sf-mission-vision .mv-icon {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        /* Headings inside cards */
+        .sf-mission-vision .mv-card h2 {
+            font-size: 24px;
+            color: #1d8f42;
+            font-weight: 700;
+            margin-bottom: 12px;
+        }
+
+        /* Text */
+        .sf-mission-vision .mv-card p {
+            font-size: 15px;
+            color: #333;
+            line-height: 1.7;
+        }
 
 /*******************************/
 /********* Feature CSS *********/
@@ -1195,6 +1276,75 @@ a:focus {
     background: #719a0a;
 }
 
+ .outlet-card-row {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+.outlet-card {
+    flex: 1;
+    min-width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 260px;
+    padding: 22px;
+    margin: 15px;
+    border-radius: 18px;
+    background: #fff;
+    border: 2px solid #ddd;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+    transition: 0.3s;
+}
+.outlet-card:before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 18px;
+    margin: 15px;
+    padding: 2px;
+    background: linear-gradient(135deg, #b36a21, #1d8f42, #e5b567);
+    -webkit-mask:
+        linear-gradient(#fff 0 0) content-box,
+        linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+    pointer-events: none;
+}
+.outlet-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 22px rgba(0, 0, 0, 0.16);
+}
+.outlet-card:hover:before {
+    margin: 15px;
+}
+.outlet-card .outlet-icon {
+    font-size: 34px;
+    margin-bottom: 10px;
+}
+.outlet-card h2 {
+    font-size: 20px;
+    font-weight: 700;
+    color: #b36a21;
+    margin-bottom: 10px;
+}
+
+/* Text */
+.outlet-card p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}
+
+.outlet-card p b {
+    color: #1d8f42;
+}
+
+@media (max-width: 768px) {
+    .outlet-card {
+        height: auto;
+    }
+}
 
 /*******************************/
 /*********** Blog CSS **********/
@@ -1828,6 +1978,82 @@ a:focus {
     list-style-type: none;
 }
 
+
+
+/*******************************/
+/********* Outlet Page CSS **********/
+/*******************************/
+
+.outlet-section {
+    background: #e9e8e8;
+    padding: 40px 0;
+    font-family: "Segoe UI", sans-serif;
+}
+
+/* Card Row */
+.outlet-section .outlet-row {
+    background: linear-gradient(135deg, #ffffff, #fff4e6);
+    padding: 28px;
+    border-radius: 14px;
+    margin-bottom: 35px;
+    box-shadow: 0 6px 25px rgba(0, 0, 0, 0.12);
+    border-left: 8px solid #ff8400;
+    position: relative;
+    overflow: hidden;
+}
+
+/* Soft Glow */
+.outlet-section .outlet-row:before {
+    content: "";
+    position: absolute;
+    top: -40px;
+    right: -40px;
+    width: 120px;
+    height: 120px;
+    background: radial-gradient(circle, rgba(255, 158, 54, 0.35), transparent 70%);
+    border-radius: 50%;
+}
+
+.outlet-section .outlet-title {
+    font-size: 24px;
+    font-weight: 800;
+    color: #ff6a00;
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    margin-bottom: 12px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.outlet-section .outlet-address {
+    font-size: 16px;
+    line-height: 1.7;
+    color: #333;
+}
+
+.outlet-section .badge-info-custom {
+    background: #ffe0c2;
+    padding: 4px 10px;
+    border-radius: 6px;
+    margin-right: 6px;
+    font-size: 13px;
+    font-weight: 600;
+    color: #b45200;
+}
+
+.outlet-section iframe {
+    width: 100%;
+    height: 280px;
+    border-radius: 12px;
+    border: 3px solid #ffb673;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width:650px) {
+    .outlet-section .outlet-row {
+        padding: 23px 0px;
+    }
+}
 
 /*******************************/
 /********* Footer CSS **********/
