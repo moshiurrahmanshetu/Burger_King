@@ -481,10 +481,10 @@ a:focus {
 }
 .label-box {
     width: 100%;
-    padding: 14px 18px;
+    padding: 14px 0px;
     border-radius: 4px;
     color: #fff;
-    margin: 15px;
+    margin: 15px 0;
 }
 .label-box .title {
     font-size: 20px;
@@ -514,7 +514,20 @@ a:focus {
     color: #ff8c21;
     font-weight: 700;
     margin-bottom: 15px;
+    display: inline-block;
+    padding: 5px 13px;
+    border: 2px solid;
 }
+
+.menu-second-version .item-wise-food-title h1 {
+    background-color: #e06f06;
+    color: #fff;
+    border: none;
+}
+.label-box-2 .price{
+    font-size: 20px;
+}
+
 @media screen and (min-width: 992px) and (max-width: 1200px) {
     .menubar-with-price {
         padding: 30px 100px;
@@ -536,7 +549,13 @@ a:focus {
     }
     .label-box {
         margin: 5px 0;
-        padding: 10px 0;
+        padding: 4px 0;
+    }
+    .item-wise-food-title h1 {
+        font-size: 26px;
+    }
+    .item-wise-food-section{
+        margin-bottom: 40px;
     }
 }
 @media screen and (min-width: 450px) and (max-width: 575px) {
