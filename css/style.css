@@ -506,6 +506,15 @@ a:focus {
     margin-left: 6px;
     color: #ffcc91;
 }
+.item-wise-food-section{
+    position: relative;
+    margin-bottom: 60px;
+}
+.item-wise-food-title h1 {
+    color: #ff8c21;
+    font-weight: 700;
+    margin-bottom: 15px;
+}
 @media screen and (min-width: 992px) and (max-width: 1200px) {
     .menubar-with-price {
         padding: 30px 100px;
@@ -971,7 +980,9 @@ a:focus {
     border-radius: 5px;
     margin: 0 5px;
 }
-
+.menu-tab .nav-item{
+    margin-bottom: 10px;
+}
 .menu .menu-tab .nav.nav-pills .nav-link:hover,
 .menu .menu-tab .nav.nav-pills .nav-link.active {
     color: #ffffff;
