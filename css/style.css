@@ -473,7 +473,7 @@ a:focus {
 /********* Booking CSS *********/
 /*******************************/
  .menubar-with-price {
-    padding: 40px 200px;
+    padding: 40px 0;
     background: #242424;
 }
 .menubar-with-price .section-header p {
@@ -481,75 +481,35 @@ a:focus {
 }
 .label-box {
     width: 100%;
-    padding: 14px 0px;
     border-radius: 4px;
     color: #fff;
-    margin: 15px 0;
+    padding: 9px 0px;
+    margin: 0px 0;
 }
-.label-box .title {
-    font-size: 20px;
-    background: linear-gradient(to right, #040e1a, #ff8c21);
-    font-weight: 700;
-    padding: 5px;
-    text-align: center;
-}
-.label-box .price {
-    background: linear-gradient(to left, #040e1a, #ff8c21);
-    font-size: 28px;
-    padding: 5px;
-    text-align: center;
-    font-weight: 800;
-}
-.label-box .price span {
-    font-size: 14px;
-    font-weight: 600;
-    margin-left: 6px;
-    color: #ffcc91;
-}
+
 .item-wise-food-section{
     position: relative;
     margin-bottom: 60px;
 }
 .item-wise-food-title h1 {
-    color: #ff8c21;
     font-weight: 700;
     margin-bottom: 15px;
     display: inline-block;
     padding: 5px 13px;
-    border: 2px solid;
-}
-
-.menu-second-version .item-wise-food-title h1 {
     background-color: #e06f06;
     color: #fff;
-    border: none;
 }
-.label-box-2 .price{
+
+.label-box .title-and-price{
     font-size: 20px;
+    background-color: #ff8c21;
+    padding: 5px 15px;
+    font-weight: 600;
 }
 
-@media screen and (min-width: 992px) and (max-width: 1200px) {
-    .menubar-with-price {
-        padding: 30px 100px;
-    }
-
-}
-@media screen and (min-width: 768px) and (max-width: 991px) {
-    .menubar-with-price {
-        padding: 30px 70px;
-    }
-    .label-box {
-        margin: 15px 0;
-        padding: 12px 5px;
-    }
-}
 @media screen and (min-width: 320px) and (max-width: 767px) {
     .menubar-with-price {
         padding: 30px 20px;
-    }
-    .label-box {
-        margin: 5px 0;
-        padding: 4px 0;
     }
     .item-wise-food-title h1 {
         font-size: 26px;
@@ -566,6 +526,16 @@ a:focus {
 @media screen and (min-width: 320px) and (max-width: 375px) {
     .menubar-with-price {
         padding: 30px 10px;
+    }
+}
+@media screen and (min-width: 320px) and (max-width: 600px) {
+    .label-box .title-and-price {
+        font-size: 16px;
+    }
+}
+@media screen and (min-width: 600px) and (max-width: 767px) {
+    .label-box .title-and-price {
+        font-size: 18px;
     }
 }
 @media (max-width: 768px) {
